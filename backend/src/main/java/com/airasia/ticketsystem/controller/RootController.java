@@ -1,0 +1,16 @@
+package com.airasia.ticketsystem.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@RestController
+public class RootController {
+
+    @GetMapping("/")
+    public void root(HttpServletResponse response) throws IOException {
+        response.sendRedirect("/swagger-ui.html");
+    }
+}
