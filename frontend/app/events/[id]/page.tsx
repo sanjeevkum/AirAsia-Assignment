@@ -86,8 +86,8 @@ export default function EventDetails({ params }: { params: { id: string } }) {
                         onClick={handleBook}
                         disabled={selectedSeatIds.length === 0}
                         className={`mt-4 px-8 py-3 rounded-full font-bold transition-all ${selectedSeatIds.length > 0
-                                ? "bg-red-600 hover:bg-red-700 text-white shadow-lg shadow-red-900/20"
-                                : "bg-neutral-800 text-neutral-500 cursor-not-allowed"
+                            ? "bg-red-600 hover:bg-red-700 text-white shadow-lg shadow-red-900/20"
+                            : "bg-neutral-800 text-neutral-500 cursor-not-allowed"
                             }`}
                     >
                         Proceed to Checkout
