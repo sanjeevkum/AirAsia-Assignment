@@ -7,7 +7,6 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.time.LocalDateTime;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.ZonedDateTime;
 
 @Data
@@ -19,7 +18,6 @@ public class EventRequest {
 
     @NotNull(message = "Date is required")
     @Future(message = "Event date must be in the future")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSX")
     private ZonedDateTime date;
 
     @NotBlank(message = "Venue is required")
